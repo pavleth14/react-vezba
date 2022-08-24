@@ -12,10 +12,9 @@ code {
     monospace;
 }
 
-
 .kockica {
+  border: 1px solid red;
   display: inline-block;
-  border: 1px solid black;
-  width: 30px;
-  height: 30px;
+  padding: 10px;
+  margin: 5px;
 }
