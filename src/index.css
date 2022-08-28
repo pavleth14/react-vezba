@@ -18,3 +18,21 @@ code {
   padding: 10px;
   margin: 5px;
 }
+
+.kockica-za-bojanku {
+  border: 1px solid black;
+  display: inline-block;
+  padding: 10px;
+  margin: 0px;
+  color: transparent;
+  cursor: pointer;
+}
+.kockica-za-bojanku.red {
+  background-color: rgb(238, 124, 124);
+}
+.kockica-za-bojanku.blue {
+  background-color: rgb(124, 162, 238);
+}
+.kockica-za-bojanku.green {
+  background-color: rgb(132, 238, 124);
+}

@@ -1,4 +1,6 @@
+import BojankaWidget from "./BojankaWidget";
 import GlupaKockica from "./GlupaKockica";
+import MatrixKockica from "./MatrixKockica";
 import MnogoKockica from "./MnogoKockica";
 import NizKockica from "./NizKockica";
 import PametnaKockica from "./PametnaKockica";
@@ -6,6 +8,12 @@ import PametnaKockica from "./PametnaKockica";
 const VezbaSaKockicama = () => {
   return (
     <div>
+      <BojankaWidget />
+      <BojankaWidget />
+      <h2>Matrix kockica</h2>
+      <MatrixKockica kolikoKolona={5} kolikoRedova={3} saBrojem={15} />
+      <MatrixKockica kolikoKolona={2} kolikoRedova={2} saBrojem={2} />
+      <MatrixKockica kolikoKolona={3} kolikoRedova={3} saBrojem={3} />
       <h2>Pametne kockice:</h2>
       <PametnaKockica />
       <PametnaKockica />
