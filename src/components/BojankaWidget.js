@@ -2,13 +2,14 @@ import { useState } from "react";
 import MatrixKockica from "./MatrixKockica";
 
 const BojankaWidget = (props) => {
-  const [color, setColor] = useState("");
+  const [color, setColor] = useState(null);
 
   return (
     <div className="bojanka-widget">
       <h2>Bojanka widget</h2>
 
       <h4>Izaberi boju</h4>
+
       <button
         onClick={() => {
           setColor("red");
@@ -16,6 +17,7 @@ const BojankaWidget = (props) => {
       >
         Crvena
       </button>
+
       <button
         onClick={() => {
           setColor("blue");
@@ -23,6 +25,7 @@ const BojankaWidget = (props) => {
       >
         plava
       </button>
+
       <button
         onClick={() => {
           setColor("green");
@@ -30,6 +33,7 @@ const BojankaWidget = (props) => {
       >
         Zelena
       </button>
+
       <button
         onClick={() => {
           setColor("");
@@ -44,7 +48,7 @@ const BojankaWidget = (props) => {
 
       <h4>Klikni da obiojis kockicu</h4>
       <MatrixKockica
-        kolikoKolona={10}
+        kolikoKolona={5}
         kolikoRedova={10}
         saBrojem={0}
         color={color}

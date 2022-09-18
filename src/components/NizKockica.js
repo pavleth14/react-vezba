@@ -7,7 +7,7 @@ const NizKockica = (props) => {
   return (
     <div>
       {niz.map((n, index) => {
-        if (props.tip === "bojanka") {
+        if (props.tip === 'bojanka') {
           return <KockicaZaBojanku key={index} broj={n} color={props.color} />;
         } else {
           return <GlupaKockica key={index} broj={n} />;
